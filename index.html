@@ -1,42 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>body{
-        background-color:beige;
-        color:black;
-        text-align:center;}</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Good morning</h1>
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-    </ul>
-    <button>Submit</button>
-    <h2>hi</h2>
-    <ul>
-        <li id="food1"></li>
-        <li id="food2"></li>
-        <li id="food3"></li>
-        <li id="food4"></li>
-        <li id="food5"></li>
-        <li id="food6"></li>
-    </ul>
-   <nav>
-    <h1 id="sup1" class="super"></h1>
-    <h1 id="sup2" class="super"></h1>
-    <h1 id="sup3" class="super"></h1>
-    <h1 id="sup4" class="super"></h1>
-    <h1 id="sup5" class="super"></h1>
-    <h1 id="sup6" class="super"></h1>
-    <p><span id="dils1"></span><span id="dils2"></span><span id="dils3"></span><span id="dils4"></span></p>
-    <p>This is a new p tag</p>
-   </nav>
+<body style="text-align:center;">
+    <div style="height:60px;width:100px;background-color:coral;"><img style="width:30px;height:30px;" src="data:image/png;base64,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" alt=""><br><p>Paul Peter<br>January 12<br>1023407</p></div>
+
 </body>
 </html>
